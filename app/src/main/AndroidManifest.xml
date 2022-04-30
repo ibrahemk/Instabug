@@ -15,6 +15,9 @@
         android:theme="@style/Theme.Instabug">
         <activity
             android:name=".MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="fullSensor"
+
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -109,8 +109,8 @@ class MainActivityTest {
             }
 
             override fun matchesSafely(imageView: ImageView): Boolean {
-                val ic_asce: Drawable? =mActivityTestRule.activity.resources.getDrawable(R.drawable.ic_asce_sort_24)
-                val ic_d: Drawable? =mActivityTestRule.activity.resources.getDrawable(R.drawable.ic_desce_sort_24)
+                val ic_asce: Drawable? =mActivityTestRule.activity.resources.getDrawable(R.drawable.ic_asce_sort_24,mActivityTestRule.activity.theme)
+                val ic_d: Drawable? =mActivityTestRule.activity.resources.getDrawable(R.drawable.ic_desce_sort_24,mActivityTestRule.activity.theme)
                 val otherBitmap = imageView.drawable.toBitmap()
                 val bit_a = ic_asce!!.toBitmap()
                 val bit_d = ic_d!!.toBitmap()
@@ -130,8 +130,8 @@ class MainActivityTest {
             }
 
             override fun matchesSafely(imageView: ImageView): Boolean {
-                val ic_search: Drawable? =mActivityTestRule.activity.resources.getDrawable(R.drawable.ic_search)
-                val ic_x: Drawable? =mActivityTestRule.activity.resources.getDrawable(R.drawable.ic_x)
+                val ic_search: Drawable? =mActivityTestRule.activity.resources.getDrawable(R.drawable.ic_search,mActivityTestRule.activity.theme)
+                val ic_x: Drawable? =mActivityTestRule.activity.resources.getDrawable(R.drawable.ic_x,mActivityTestRule.activity.theme)
                 val otherBitmap = imageView.drawable.toBitmap()
                 val bit_s = ic_search!!.toBitmap()
                 val bit_x = ic_x!!.toBitmap()
