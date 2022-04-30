@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Instabug</string>
+    <string name="wait_while_loading">Loading - please wait..</string>
+</resources>
